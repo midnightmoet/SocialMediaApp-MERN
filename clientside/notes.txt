@@ -1,0 +1,7 @@
+Font family: Roboto
+<link>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+CSS:  font-family: 'Roboto', sans-serif;
+
+11/14 added a footer and css.  Reserve the right to change the entire portion depending on my thought process when I come back to it.  For now leaving it as is though layout isn't exactly what I want.

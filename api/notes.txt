@@ -1,0 +1,23 @@
+Packages and their links to the docs:
+
+express
+https://www.npmjs.com/package/express
+
+
+mongoose
+https://mongoosejs.com/docs/
+
+dotenv
+https://www.npmjs.com/package/dotenv
+
+helmet
+https://www.npmjs.com/package/helmet
+
+morgan
+https://www.npmjs.com/package/morgan
+
+brcypt
+https://www.npmjs.com/package/bcrypt
+
+nodemon
+https://www.npmjs.com/package/nodemon

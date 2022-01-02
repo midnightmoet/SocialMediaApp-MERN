@@ -1,0 +1,39 @@
+.footer {
+    height: 50px;
+    width: 100%;
+    /* background-color: orchid; */
+    position: sticky;
+}
+
+.footerItem {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.footerTitle {
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+    /* border-top: 2px dotted green; */
+    border-bottom: 2px dotted limegreen;
+    font-family: 'Koh Santepheap', cursive;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    line-height: 20px;
+    text-align: center;
+}
+.footerList {
+    list-style: none;
+    display: flex;
+    
+}
+
+.footerSocial {
+    margin-top: 15px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: row;
+}
