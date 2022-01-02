@@ -13,7 +13,7 @@ export default function Feed() {
             const res = await axios.get("posts/timeline/6187fd0c632e1546dcb25112")
             console.log(res);
         };
-        fetchPosts();
+       fetchPosts();
     }, []);
 
     return (
