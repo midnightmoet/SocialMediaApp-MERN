@@ -6,7 +6,7 @@ export default function CloseFriend({ user }) {
 		<li className="sidebarFriend">
 			<img
 				className="sidebarFriendImg"
-				src={PF + user.profilePicture}
+				src={PF+user.profilePicture}
 				alt=""
 			/>
 			<span className="sidebarFriendName">{user.username}</span>
