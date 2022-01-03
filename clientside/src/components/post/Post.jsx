@@ -2,9 +2,10 @@ import "./post.css";
 import { MoreVert } from "@mui/icons-material";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import {format} from "timeago.js";
 
 export default function Post({ post }) {
-	const [like, setLike] = useState(post.like);
+	const [like, setLike] = useState(post.likes.length);
 	const [isLiked, setIsLiked] = useState(false);
 	const [user, setUser] = useState({});
 	const PF = process.env.REACT_APP_PF;
@@ -16,7 +17,7 @@ export default function Post({ post }) {
         };
        fetchUser();
 	   // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [post.userId]);
 
 	const likeHandler = () => {
 		setLike(isLiked ? like - 1 : like + 1);
@@ -30,13 +31,13 @@ export default function Post({ post }) {
 					<div className="postTopLeft">
 						<img
 							className="postProfileImg"
-							src={user.profilePicture}
+							src={user.profilePicture  || PF+"person/noAvatar.jpg"}
 							alt=""
 						/>
 						<span className="postUsername">
 							{user.username}
 						</span>
-						<span className="postDate">{post.date}</span>
+						<span className="postDate">{format(post.createdAt)}</span>
 					</div>
 					<div className="postTopRight">
 						<MoreVert />
@@ -46,7 +47,7 @@ export default function Post({ post }) {
 					<span className="postCenterText">{post?.desc}</span>
 					<img
 						className="postCenterImg"
-						src={PF+post.photo}
+						src={PF+post.img}
 						alt=""
 					/>
 				</div>
